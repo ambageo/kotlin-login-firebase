@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "870216875533",
+    "project_id": "login-kotlin-udacity",
+    "storage_bucket": "login-kotlin-udacity.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:870216875533:android:e5ce89cee0c6e245eadf44",
+        "android_client_info": {
+          "package_name": "com.example.android.firebaseui_login_sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "870216875533-81tm15a7ngtjop7nkkba3ta9qv7r7hgt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.android.firebaseui_login_sample",
+            "certificate_hash": "850bf53d7b556aa6b6c7170fa07da9bc6ee2fc37"
+          }
+        },
+        {
+          "client_id": "870216875533-ra284eq4hbuk6kevu8i4ealge7ts986m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD2Hqr_82gn8ZNxaEEzqPVRE1IcV3o0Syo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "870216875533-ra284eq4hbuk6kevu8i4ealge7ts986m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
