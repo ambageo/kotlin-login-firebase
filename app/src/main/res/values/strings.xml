@@ -31,4 +31,6 @@
 
     <!--Shared Preference Keys -->
     <string name="preference_fact_type_key">fact_type_pref</string>
+    <string name="log_out_successful">Successfully signed out</string>
+    <string name="log_in_successful">Successfully logged in</string>
 </resources>
