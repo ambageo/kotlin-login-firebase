@@ -121,7 +121,7 @@ class MainFragment : Fragment() {
     }
 
     /**
-     * Register a launcher used to start the process of executing an ActivityResultContract
+     * Registers a launcher used to start the process of executing an ActivityResultContract
      * so that we can listen to the result of the sign - in process
      * This must be done in onCreate() or on Attach, ie before the fragment is created
      */
