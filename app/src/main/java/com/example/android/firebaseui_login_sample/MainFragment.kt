@@ -71,7 +71,7 @@ class MainFragment : Fragment() {
             // TODO call launchSignInFlow when authButton is clicked //DONE
             launchSignInFlow()
         }
-        
+        // TODO 10.2 Add a listener to navigate to the SettingsFragment
         binding.settingsBtn.setOnClickListener {
             findNavController().navigate(R.id.action_mainFragment_to_settingsFragment)
         }

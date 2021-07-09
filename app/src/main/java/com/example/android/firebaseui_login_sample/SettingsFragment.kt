@@ -39,5 +39,8 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        // TODO 11.1 Observe the authenticationState of the app by utilizing the authenticationState
+        //  variable in LoginViewModel. Navigate the user to the login screen if they attempt to
+        //  access the settings screen while not logged in.
     }
 }

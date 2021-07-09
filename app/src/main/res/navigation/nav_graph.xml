@@ -25,6 +25,7 @@
             android:id="@+id/mainFragment"
             android:name="com.example.android.firebaseui_login_sample.MainFragment"
             android:label="MainFragment">
+        <!-- TODO 10.1 Add an action from MainFragment to SettingsFragment -->
         <action
             android:id="@+id/action_mainFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
