@@ -17,6 +17,7 @@
 package com.example.android.firebaseui_login_sample
 
 import android.content.Context
+import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.map
 import androidx.preference.PreferenceManager
@@ -66,6 +67,9 @@ class LoginViewModel : ViewModel() {
         val defaultFactType = context.resources.getStringArray(R.array.fact_type)[0]
         val funFactType = sharedPreferences.getString(factTypePreferenceKey, defaultFactType)
 
-        return androidFacts[Random.nextInt(0, androidFacts.size)]
+        return when (funFactType){
+            defaultFactType -> androidFacts[Random.nextInt(0, androidFacts.size)]
+            else -> californiaFacts[Random.nextInt(0, californiaFacts.size)]
+        }
     }
 }
