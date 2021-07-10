@@ -39,8 +39,16 @@ class SettingsFragment : PreferenceFragmentCompat() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        // TODO 11.1 Observe the authenticationState of the app by utilizing the authenticationState
+        // TODO 11.2 Observe the authenticationState of the app by utilizing the authenticationState
         //  variable in LoginViewModel. Navigate the user to the login screen if they attempt to
-        //  access the settings screen while not logged in.
+        //  access the settings screen while not logged in. //DONE
+        viewModel.authenticationState.observe(viewLifecycleOwner, Observer { authenticationState ->
+            when(authenticationState) {
+                LoginViewModel.AuthenticationState.AUTHENTICATED -> Log.i(TAG, "Authenticated")
+                LoginViewModel.AuthenticationState.UNAUTHENTICATED -> findNavController().navigate(
+                    R.id.action_settingsFragment_to_loginFragment)
+                else -> Log.e(TAG, "New $authenticationState state that doesn't require any UI change")
+            }
+        })
     }
 }

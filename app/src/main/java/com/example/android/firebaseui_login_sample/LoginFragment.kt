@@ -66,6 +66,12 @@ class LoginFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         navController = findNavController()
+
+        // TODO 11.2 Make sure that when the user presses the back button, it brings them back to
+        //  the home screen
+        requireActivity().onBackPressedDispatcher.addCallback(viewLifecycleOwner){
+            navController.popBackStack(R.id.mainFragment, false)
+        }
     }
 
     private fun launchSignInFlow() {

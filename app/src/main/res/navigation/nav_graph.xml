@@ -25,7 +25,7 @@
             android:id="@+id/mainFragment"
             android:name="com.example.android.firebaseui_login_sample.MainFragment"
             android:label="MainFragment">
-        <!-- TODO 10.1 Add an action from MainFragment to SettingsFragment -->
+        <!-- TODO 10.1 Add an action from MainFragment to SettingsFragment  //DONE -->
         <action
             android:id="@+id/action_mainFragment_to_settingsFragment"
             app:destination="@id/settingsFragment" />
@@ -34,6 +34,10 @@
             android:id="@+id/settingsFragment"
             android:name="com.example.android.firebaseui_login_sample.SettingsFragment"
             android:label="fragment_settings">
+        <!-- TODO 11.1 Add an action from SettingsFragment to LoginFragment  //DONE -->
+        <action
+            android:id="@+id/action_settingsFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
     <fragment
             android:id="@+id/loginFragment"
